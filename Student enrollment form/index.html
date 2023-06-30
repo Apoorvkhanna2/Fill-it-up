@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Student enrollment form</h1><br>
+    <div id="main form">
+        <form class="myform" name="form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="box">
+                </div>
+            <div class="form-group">
+                <label for ="rollno">Roll no.</label>
+                <input type="text" id="rollno" name="rollno" class="box">
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="box">  
+            </div>
+            <div class="form-group">
+                <label for ="phone">Mobile</label>
+                <input type="tel" name="mobile" id="phone" pattern="[0-9]{5}-[0-9]{5}" class="box">
+                </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="gender-group">
+                    <input type="radio" name="gender" value="Male" id="gender" class="gender">Male
+                    <input type="radio" name="gender" value="Female" id="gender" class="gender">Female
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Skills:</label>
+                <div class="Skills-group">
+                    <input type="checkbox" name="skills" id="java" value="java">Java
+                    <input type="checkbox" name="skills" id="html" value="html">Html
+                    <input type="checkbox" name="skills" id="C" value="C">C
+                    <input type="checkbox" name="skills" id="Python" value="Python">Python
+                    <input type="checkbox" name="skills" id="C++" value="C++">C++
+
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="button" value="Enroll student" name="add" class="btn" onclick="addStudent()">
+                <input type="reset" value="Clear" name="reset" class="btn1">
+            </div>
+            </form>
+       </div>
+    
+    <div id="enroll-table">
+        <h3>Enrolled Students</h3>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll no.</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Gender</th>
+                    <th>Skills</th>
+                </tr>
+            </thead>
+            <tbody id="student-table-body"></tbody>
+        </table>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>

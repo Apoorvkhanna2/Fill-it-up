@@ -1,0 +1,73 @@
+body{
+    font-family: Arial,sans-serif;
+    background-image: url("get.jpg");
+    background-color: cyan;
+    margin: 0;
+    padding:0;
+    
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ead9d9;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
+.myform{
+    margin-top: 20px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.box{
+    width: 98%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #d9d1d1;
+}
+.gender-group{
+    display: flex;
+}
+.skills-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-group input{
+    margin-right: 10px;
+}
+.buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+.btn{
+    padding: 8px 16px;
+    background-color: #e43b2f;
+    color: #f9dbdb;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#enroll-table{
+    margin-top: 40px;
+}
+#student-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#student-table th,#student-table td{
+    padding: 10px;
+    border: 1px solid#a9a8a8;
+}
+#student-table-body tr:nth-child(even){
+    background-color: #fee0e0;
+}
